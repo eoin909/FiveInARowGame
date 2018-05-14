@@ -1,0 +1,47 @@
+{
+  "name": "realtime-multiplayer",
+  "version": "0.1.1",
+  "description": "Realtime multiplayer in the browser",
+  "author": "Eoin Reilly>",
+  "scripts": {
+    "start": "nodemon ./server/index.js",
+    "client": "webpack-dev-server --colors",
+    "deploy": "./deploy.sh",
+    "start run:dev":"node ./server/index.js && webpack-dev-server --colors",
+    "build": "SET NODE_ENV=production webpack",
+    "lint": "eslint lib"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "debug": "^2.2.0",
+    "express": "^4.16.2",
+    "material-ui": "^0.20.0",
+    "mongoose": "^5.0.12",
+    "node-uuid": "^1.4.8",
+    "react": "^15.1.0",
+    "react-bootstrap-table": "^4.3.1",
+    "react-color": "^2.14.0",
+    "react-dom": "^15.1.0",
+    "react-icons": "^2.2.5",
+    "react-table": "^6.8.0",
+    "react-tap-event-plugin": "^3.0.2",
+    "socket.io": "^1.7.4",
+    "socket.io-client": "^1.4.6",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.11.1",
+    "node-sass": "^3.7.0",
+    "nodemon": "^1.9.2",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
